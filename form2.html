@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+   <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .form-container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: left;
+        font-weight: 100;
+    }
+    
+    form fieldset {
+        border: none;
+    }
+    
+    legend {
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #666;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+        flex: 1;
+        padding-right: 10px;
+    }
+    
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    
+    .input-group input,
+    .input-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    .input-group input::placeholder {
+        color: #aaa;
+    }
+    
+    .input-group input:focus,
+    .input-group select:focus {
+        border-color: #888;
+        outline: none;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .row .input-group {
+        flex: 1;
+        margin-right: 15px;
+    }
+    
+    .row .input-group:last-child {
+        margin-right: 0;
+    }
+
+    .upper_box{
+        background-color: rgb(12, 7, 91);
+        margin-right: 10px;
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+        padding-top: 100px;
+        padding-right: 10px;
+        padding-bottom: 200px;
+    }
+
+    .grey_box{
+        background-color: rgb(202, 206, 208);
+        margin-right: 10px;
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 2%;
+        font-weight: bolder;
+        color:black;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .headings{
+        padding: 4px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        font-size: large;  
+    }
+    #first-name, #middle-name, #last-name{
+       
+        margin-bottom: 3px;
+    } 
+    .label{
+    font-size: 12px;
+    margin-top: 8px;
+}
+#present_address{
+    width: 100%;}
+    
+    </style>
+</head>
+<body>
+    <div class="upper_box">
+    <div class="form-container">
+        <center>
+        <h2>STUDENT REGISTRATION FORM</h2>
+    </center>
+        <form>
+            <fieldset>
+                <div class="grey_box">
+                <legend >Basic Information</legend>
+                </div>
+
+                
+                    <div class="headings">
+                    <p>Full Name</p>
+                    </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" id="first-name" placeholder="First Name">
+                        <label for="first-name" class="label"> First Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        
+                        <input type="text" id="middle-name" placeholder="Middle Name">
+                        <label for="middle-name" class="label">Middle Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="last-name" placeholder="Last Name" >
+                        <label for="last-name" class="label">Last Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="student-number">Student Number</label>
+                        <input type="text" id="student-number" placeholder="e.g. 11183021">
+                        <label for="studentNo" class="label">e.g. 11183021</label>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="year-level">Year Level</label>
+                        <select id="year-level">
+                            <option>Please Select</option>
+                            <option>1st Year</option>
+                            <option>2nd Year</option>
+                            <option>3rd Year</option>
+                            <option>4th Year</option>
+                        </select>
+                        <label for="year" class="label">for Incoming A.Y. '12-'13</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="degree-program">Degree Program</label>
+                        <select id="degree-program">
+                            <option>Please Select</option>
+                            <option>BS Computer Science</option>
+                            <option>BS Information Technology</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="ex: myname@example.com">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" id="phone-number" placeholder="(000) 000-0000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="network-provider">Network Provider</label>
+                        <select id="network-provider">
+                            <option>Please Select</option>
+                            <option>Provider A</option>
+                            <option>Provider B</option>
+                        </select>
+                    </div>
+
+                    
+                </div>
+
+                <div class="headings">
+                    <p>Birth Date</p>
+                    </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <input type="date" id="month" placeholder="Please select a month" value="Please select a month">
+                        <label for="month" class="label"> month</label>
+                    </div>
+
+                    <div class="input-group">
+                        
+                        <input type="date" id="date" placeholder="Please select a day">
+                        <label for="middle-name" class="label">date</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="date" id="year" placeholder="Please select a year" >
+                        <label for="last-name" class="label">year</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <input type="date" id="month" placeholder="Please select a month" value="Please select a month">
+                        <label for="month" class="label"> month</label>
+                    </div>
+
+                    <div class="input-group">
+                        
+                        <input type="date" id="date" placeholder="Please select a day">
+                        <label for="middle-name" class="label">date</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="date" id="year" placeholder="Please select a year" >
+                        <label for="last-name" class="label">year</label>
+                    </div>
+                </div>
+
+               
+                    <div class="headings">
+                        <p>Present Address</p>
+                        </div>
+                        <div class="row">
+                    <div class="input-group">
+                        <textarea row ="8" id="present_address" ></textarea>
+                        <label  class="label"> Street Address line 1</label>
+                        <br><br>
+                        <textarea row ="8" id="present_address" ></textarea>
+                        <label  class="label"> Street Address line 2</label>
+                    </div>
+                    
+                </div>
+                
+            </fieldset>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+      .calendar {
+        display: inline-block;
+        border-collapse: collapse;
+        width: 100%; 
+        max-width: 450px;
+        text-align: center;
+        border: 2px solid #267cba;
+      }
+      
+      .month {
+        background-color: #267cba;
+        color: white;
+        padding: 10px;
+        font-size: 24px;
+        text-align: center;
+        border-bottom: 2px solid #267cba; 
+        box-sizing: border-box; 
+            }
+      
+      .calendar-body {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        background-color: #f3f3f3;
+        border-top: 1px solid #267cba;
+      }
+      
+      .day-header {
+        padding: 10px;
+        color: white;
+        background-color: #267cba;
+        border: 1px solid #267cba; 
+      }
+      
+      .day, .blank {
+        padding: 10px;
+        background-color: #f3f3f3;
+        border: 1px solid #267cba; 
+        box-sizing: border-box; 
+      }
+      
+      .blank {
+        background-color: yellow;
+      }
+      
+      .day.heading {
+        background-color: #267cba;
+        color: white;
+      }
+      
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+        <h2>December 2024 Calendar</h2>
+    </div>
+    <div class="calendar">
+    
+        <div class="month">December 2024</div>
+        
+        <div class="calendar-body">
+          <div class="day-header">Sun</div>
+          <div class="day-header">Mon</div>
+          <div class="day-header">Tue</div>
+          <div class="day-header">Wed</div>
+          <div class="day-header">Thu</div>
+          <div class="day-header">Fri</div>
+          <div class="day-header">Sat</div>
+          <div class="blank"></div>
+          <div class="blank"></div>
+          <div class="blank"></div>
+          <div class="blank"></div>
+          <div class="day">1</div>
+          <div class="day">2</div>
+          <div class="day">3</div>
+          <div class="day">4</div>
+          <div class="day">5</div>
+          <div class="day">6</div>
+          <div class="day">7</div>
+          <div class="day">8</div>
+          <div class="day">9</div>
+          <div class="day">10</div>
+          <div class="day">11</div>
+          <div class="day">12</div>
+          <div class="day">13</div>
+          <div class="day">14</div>
+          <div class="day">15</div>
+          <div class="day">16</div>
+          <div class="day">17</div>
+          <div class="day">18</div>
+          <div class="day">19</div>
+          <div class="day">20</div>
+          <div class="day">21</div>
+          <div class="day heading">22</div>
+          <div class="day">23</div>
+          <div class="day">24</div>
+          <div class="blank">25</div>
+          <div class="day">26</div>
+          <div class="day">27</div>
+          <div class="day">28</div>
+          <div class="day">29</div>
+          <div class="day">30</div>
+          <div class="blank">31</div>
+        </div>
+      </div>
+    </center>
+
+</body>
+</html>
