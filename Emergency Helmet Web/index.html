@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Help Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Who is in need of help?</h1>
+        <div class="profile-selection">
+            <!-- User Profiles -->
+            <div class="profile" onclick="showDetails('naman')">
+                <img src="profile_photo.jpg" alt="Naman Shah">
+                <p>Naman Shah</p>
+            </div>
+            <div class="profile" onclick="showDetails('father')">
+                <img src="IMG_20190929_142126.jpg" alt="Father">
+                <p>Suraj Shah</p>
+            </div>
+            <div class="profile" onclick="showDetails('thirdPerson')">
+                <img src="IMG_20181117_234520.jpg" alt="Third Person">
+                <p>Urvi Shah</p>
+            </div>
+        </div>
+
+        <!-- Details Section (Hidden initially) -->
+        <div id="detailsSection" class="details-section" style="display:none;">
+            <!-- JavaScript will populate details here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
